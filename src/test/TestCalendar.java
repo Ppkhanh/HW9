@@ -50,7 +50,7 @@ class TestCalendar {
 	// Create a new method for boundary testing
 	@ParameterizedTest
 	@ValueSource(ints = { 1824, 2978, 1753, 1647 })
-	public void is_year_in_20th_century_exception_thrown(int year) {
+	public void Should_throw_year_in_20th_century_exception(int year) {
 		Calendar cal = new Calendar(year);
 		ArrayIndexOutOfBoundsException ex =  Assertions.assertThrows(ArrayIndexOutOfBoundsException.class, () -> 
 				cal.isLeapYear());
