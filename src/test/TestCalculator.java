@@ -17,7 +17,8 @@ class TestCalculator {
 	@Test
 	public void Should_add_two_numbers_and_return_result() {
 		// Implement
-		assertEquals(5, calculator.add(1, 4));
+		int expected = 1+4;
+		assertEquals(expected, calculator.add(1, 4));
 	}
 
 	@ParameterizedTest
@@ -32,19 +33,22 @@ class TestCalculator {
 	@Test
 	public void Should_substract_two_numbers_and_return_result() {
 		// Implement
-		assertEquals(6, calculator.sub(10, 4));
+		int expected = 10-4;
+		assertEquals(expected, calculator.sub(10, 4));
 	}
 
 	@Test
 	public void Should_multiply_two_numbers_and_return_result() {
 		// Implement
-		assertEquals(40, calculator.multiply(10, 4));
+		expectecd = 10*4;
+		assertEquals(expected, calculator.multiply(10, 4));
 	}
 
 	@Test
 	public void Should_divide_two_numbers_and_return_result() {
 		// Implement
-		assertEquals(2, calculator.divide(10, 4));
+		float  expected = (float) 10/4;
+		assertEquals(expected, calculator.divide(10, 4));
 	}
 
 	@Test
