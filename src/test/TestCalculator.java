@@ -40,7 +40,7 @@ class TestCalculator {
 	@Test
 	public void Should_multiply_two_numbers_and_return_result() {
 		// Implement
-		expectecd = 10*4;
+		int expected = 10*4;
 		assertEquals(expected, calculator.multiply(10, 4));
 	}
 
